@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The SEA Teacher Project 2025 - A student exchange experience for future educators and IT professionals.">
+        <meta name="keywords" content="SEA Teacher Program, student exchange, international teaching, IT in education">
+        <meta name="author" content="Kim Dela Cruz">
+        <meta property="og:title" content="SEA Teacher's Program">
+        <meta property="og:description" content="A once-in-a-lifetime journey of a student from Northern Iloilo State University">
+        <meta property="og:image" content="images/banner-uki.jpg">
+        <meta property="og:url" content="https://yourwebsite.com">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="SEA Teacher's Program">
+        <meta name="twitter:description" content="A student exchange experience like no other">
+        <meta name="twitter:image" content="images/banner-uki.jpg">
+        
+        <title>SEA Teacher's Program 2025 | Student Exchange Experience</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <script src="https://kit.fontawesome.com/e5d5cf5956.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="contact.css">
+      </head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">SEA Teacher Project 2025</a>
+                <div class="navbar-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="content.html">Content</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container2">
+            <div class="row">
+                    <h1>
+                        UKI-NISU Student Exchange
+                    </h1>
+                    <p>We value your thoughts! Your feedback helps us improve and create a better experience for you. Whether you have suggestions, questions, or just want to share your thoughts, we'd love to hear it from you. Let us know what you think about our website, what you love, what could be better, or any ideas you have. Your input matters, and we're always looking for ways to make your visit even more enjoyable. Drop a message to share your thoughts to make this space even better or download my CV attached below. </p>
+                    <a href="/files/Dela Cruz, Kim P. CV.pdf" download class="btn btn1">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <h1>Get in Touch - We'd Love to Hear From You!</h1>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </header>
+    <!-- End of Header Section -->
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/x"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <span>UKI-NISU SEA Teacher Project 2025</span>
+    </footer>
+    <!-- End of Footer Section -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "SEA Teacher's Program",
+          "author": { "@type": "Person", "name": "Kim Dela Cruz" },
+          "publisher": { "@type": "Organization", "name": "NISU" },
+          "datePublished": "2025-04-09"
+        }
+    </script>
+    <!-- JavaScript Code -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyCdFBVgvWUtMP7a-9w5D2KA-Z7oimIr4rTAUx476BozB32azoec04jM9-oXKy7LOBS/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>

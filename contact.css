@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+}
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+
+/* Header Styles */
+
+header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/jakarta\ building.jpg) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.navbar {
+    background: rgba(27, 38, 49, 0.741);
+    padding: 1.2rem;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+.navbar-nav {
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+}
+
+.navbar-nav a {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+
+.navbar-nav a:hover {
+    opacity: 0.7;
+}
+
+
+
+/* Contact Styles */
+
+/* Glassmorphism effect */
+.container2 {
+    background: rgba(255, 255, 255, 0.15); /* More transparent for glass effect */
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
+    color: #ffffff;
+    display: flex;
+    width: 100%;
+    max-width: 1100px; /* Limits max width for better layout */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    margin-top: 2%;
+    margin-left: 6%;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Left section */
+  .row {
+    flex: 1;
+    max-width: 50%;
+    font-size: 23px;
+  }
+  
+  .row h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .row p{
+    margin-top: 2%;
+    margin-right: 3%;
+  }
+  
+  /* Right section */
+  .contact-right {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .contact-right h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* Form */
+  .contact-right form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    margin-top: 25px  ;
+    margin-right:15px ;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 6px;
+    outline: none;
+  }
+  
+  form .btn2 {
+    width: auto;
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 2.5%;
+    cursor: pointer;
+    background: #3497ee;
+    border: none;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  form .btn2:hover {
+    background: #f4f4f4;
+    color: rgb(10, 10, 10);
+  }
+  
+  /* Buttons1 */
+  .btn.btn1 {
+    display: inline-block;
+    width:fit-content;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    background: #3497ee;
+    transition: 0.3s;
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 2%;
+    cursor: pointer;
+    background: #3497ee;
+    border: none;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #f4f4f4;
+    color:rgb(10, 10, 10);
+  }
+
+ 
+  
+  /* Buttons2 */
+  .btn.btn2 {
+    display: inline-block;
+    width: 100%;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    background: #3497ee;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #f4f4f4;
+    color:rgb(10, 10, 10);
+  }
+
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container2 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .row, .contact-right {
+      max-width: 100%;
+    }
+  }
+
+/* Footer Styles */
+
+footer {
+    background: rgba(27, 38, 49, 0.741);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+
+.social-links a {
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+    background: #fff;
+    color: #2b2b2b;
+}
+
+.footer span {
+    margin-top: 1rem;
+    display: block;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 540px) {
+    .navbar-nav a {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title {
+        font-size: 5rem;
+    }
+    .banner form {
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input {
+        padding: 0.8rem 0;
+    }
+    .design-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item {
+        margin: 0;
+    }
+    .blog-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .blog-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .design-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
