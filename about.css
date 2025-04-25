@@ -102,22 +102,24 @@ header{
 
 /* about */
 .about{
-    background-color: #bdbac0;
+    background: linear-gradient(to top, #2980b9, #6dd5fa);
     padding: 4.5rem 0;
 }
 .about-text{
     margin: 2rem 0;
+    color:#fff;
 }
-.about-text > p{
+.about-text  p{
     font-size: 1.1rem;
     padding: 0.6rem 0;
     opacity: 0.8;
 }
-.about img{
-    height: auto;
-    width: auto;
-    border-radius: 0px, 0px, 55px, 55px;
-    margin-left: 100px;
+.title img{
+    width: 60%;
+    height: 100%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    margin-top: 0%;
 }
 
 
@@ -206,7 +208,7 @@ footer{
     }
     .about-content{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         column-gap: 3rem;
         align-items: center;
     }
