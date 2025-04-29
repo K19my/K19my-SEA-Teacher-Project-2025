@@ -102,24 +102,33 @@ header{
 
 /* about */
 .about{
-    background: linear-gradient(to top, #2980b9, #6dd5fa);
+    background: linear-gradient(to bottom, #94c2e9, #908f8a);
     padding: 4.5rem 0;
+    
 }
 .about-text{
-    margin: 2rem 0;
+    margin-left: 70px;
+    margin-right: 70px;
     color:#fff;
 }
-.about-text  p{
+.about-text p{
     font-size: 1.1rem;
     padding: 0.6rem 0;
-    opacity: 0.8;
+    
 }
-.title img{
+.about-text h2{
+    text-align: center;
+}
+ img{
     width: 60%;
     height: 100%;
     margin-left: 20%;
     margin-bottom: 5%;
     margin-top: 0%;
+}
+.container .about-content .about-text h2 p{
+    margin-left: 520px;
+    margin-right: 520px;
 }
 
 
